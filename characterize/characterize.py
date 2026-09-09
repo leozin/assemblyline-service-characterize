@@ -434,7 +434,7 @@ class Characterize(ServiceBase):
                 sid = prop.get("value")
                 if isinstance(sid, str) and re.fullmatch(r"S-1-[0-9]+(?:-[0-9]+)+", sid):
                     lnk_result_section.add_tag("file.shortcut.sid", sid)
-        
+
         # Adapted code from previous logic. May be best replaced by new heuristics and logic.
         bp = str(lbp).strip()
         rp = str(features["data"].get("relative_path", "")).strip()
