@@ -17,14 +17,6 @@ This Assemblyline service extract information about the file:
 [LnkParse3](https://github.com/gdesmar/LnkParse3) tool to pull out metadata information.
 * If the file is a Web Shortcut, this service will parse the configuration accordingly.
 
-### Windows shortcut identity tags
-
-When present, LnkParse3 metadata is tagged as `file.shortcut.sid` (the SID string) and
-`file.shortcut.drive_serial` (eight uppercase hexadecimal digits, including leading zeros).
-The original values remain available in `features.json`.
-These tags require an `assemblyline-base` release containing
-[the shortcut schema additions](https://github.com/CybercentreCanada/assemblyline-base/pull/2204).
-
 ## Image variants and tags
 
 Assemblyline services are built from the [Assemblyline service base image](https://hub.docker.com/r/cccs/assemblyline-v4-service-base),
